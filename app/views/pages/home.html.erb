@@ -1,4 +1,4 @@
-<main role="main">
+<main role="main" class="container">
   <section class="jumbotron text-center">
     <!--<div class="container">-->
       <div class="content">
@@ -13,9 +13,9 @@
               params[:query],
                   #class: "form-control",
                   class: "form-control",
-                    placeholder: "Enter your city"
+                  placeholder: "Enter your city"
               %>
-              <%= link_to "Explore", "/offers?query=#{params[:query]}", class: "btn button-offer"%>
+              <%= button_tag "Explore", class: "btn button-offer" %>
               <% end %>
             </div>
           </form>
